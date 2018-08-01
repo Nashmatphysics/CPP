@@ -33,10 +33,10 @@ int main(void)
 	}
 
 	travel_fun(array, count, act_fun);
-
+	printf("=================\n");
 	sort_array(array, count);
-
-	travel_fun(array, count, act_fun);
+	//travel_fun(array, count, act_fun);
+	tra_func(array, count);
 	des_array(&array);
 
 	//getchar();
@@ -44,7 +44,7 @@ int main(void)
 	return 0;
 }
 
-int creat_array(int *array[], int count)
+int creat_array(int **array, int count)
 {
 	int ret = 0;
 	if ((array == NULL) || (count <= 0))
@@ -60,7 +60,7 @@ int creat_array(int *array[], int count)
 		printf("malloc error\n");
 		goto END;
 	}
-
+	memset(t_array, 0, count * sizeof(int));
 	rand_fun(t_array, count);
 	*array = t_array;
 
@@ -88,9 +88,10 @@ void sort_array(int *array, int count)
 	}
 	int *t_array = array;
 	int index = 0;
-	for (int j = count; j > 0; j--)
+
+	for (int j = count; j > 0; --j)//实际只需要循环count-1次, 但是这里循环了count次
 	{
-		for (int i = 0; i < j; i++)
+		for (int i = 0; i < j; i++)//循环了j次. i最后为j
 		{
 			if (t_array[index] < t_array[i])
 			{
@@ -117,6 +118,14 @@ void travel_fun(int *array, int count, void (*func)(int vary))
 	}
 	putchar('\n');
 	printf("==================================\n");
+}
+
+void tra_func(int *array, int count)
+{
+	for (int i = 0; i < count; i++)
+	{
+		
+	}
 }
 
 void act_fun(int vary)
