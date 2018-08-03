@@ -11,13 +11,17 @@
 #include <time.h>
 #include <stdarg.h>
 
-int creat_array(int *array[], int count);
-void des_array(int *array[]);
-void sort_array(int *array, int count);
-void travel_fun(int *array, int count, void(*func)(int vary));
-void act_fun(int vary);
-void rand_fun(int *array, int count);
+if ()
+{
+	int creat_array(int *array[], int count);
+	void des_array(int *array[]);
+	void sort_array(int *array, int count);
+	void travel_fun(int *array, int count, void(*func)(int vary));
+	void tra_func(int *array, int count);
+	void act_fun(int vary);
+	void rand_fun(int *array, int count);
 
+}
 int main(void)
 {
 	int *array = NULL;
@@ -124,7 +128,7 @@ void tra_func(int *array, int count)
 {
 	for (int i = 0; i < count; i++)
 	{
-		
+		printf("%d\t", array[i]);
 	}
 }
 
