@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="冒泡排序.c" />
+    <ClCompile Include="排序复习.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{9AB0E97B-C0C9-4ACF-A144-9CFD9E1FD883}</ProjectGuid>

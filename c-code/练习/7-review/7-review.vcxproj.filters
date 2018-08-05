@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="冒泡排序.c">
+    <ClCompile Include="排序复习.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
