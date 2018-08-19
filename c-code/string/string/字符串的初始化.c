@@ -2,6 +2,7 @@
 2018/07/03
 字符串的初始化
 */
+
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <string.h>

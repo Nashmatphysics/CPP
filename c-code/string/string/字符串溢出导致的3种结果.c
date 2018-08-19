@@ -8,7 +8,6 @@
 #include <ctype.h>
 #include <math.h>
 #include <windows.h>
-
 int main(void)
 {
 
@@ -21,4 +20,4 @@ int main(void)
 //getchar();
 system("pause");
 return 0;
-}
+}}
