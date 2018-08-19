@@ -20,4 +20,4 @@ int main(void)
 //getchar();
 system("pause");
 return 0;
-}}
+}
