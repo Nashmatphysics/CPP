@@ -113,6 +113,7 @@ void sort_func(int *array, int count)
 */
 
 //递归方式的冒泡排序.
+/*
 void sort_func(int *array, int count)
 {
 	if ((array == NULL))
@@ -139,11 +140,61 @@ void sort_func(int *array, int count)
 	}
 	--count;
 	sort_func(array, count);
-
-
 	//}
-
 }
+*/
+
+//选择排序
+/*
+void sort_func(int *array, int count)
+{
+	if ((array == NULL))
+	{
+		printf("sort_func input error\n");
+		return;
+	}
+
+	for (int j = count; j > 0; j--)
+	{
+		int index = 0;
+		for (int i = 0; i < j; i++)
+		{
+			if (array[index] < array[i])
+				index = i;
+		}
+		int temp = array[j - 1];
+		array[j - 1] = array[index];
+		array[index] = temp;
+	}
+}
+*/
+//递归方式的选择排序
+void sort_func(int *array, int count)
+{
+	if ((array == NULL))
+	{
+		printf("sort_func input error\n");
+		return;
+	}
+	if (!(count > 0))//不能让count=0通过, 否则count-1就会出问题
+	{
+		return;
+	}
+	int index = 0;
+	for (int i = 0; i < count; i++)
+	{
+		if (array[index] < array[i])
+		{
+			index = i;
+		}
+	}
+	int temp = array[index];
+	array[index] = array[count - 1];
+	array[count - 1] = temp;
+	count--;
+	sort_func(array, count);
+}
+
 void des_func(int **array)
 {
 	if (array == NULL)
