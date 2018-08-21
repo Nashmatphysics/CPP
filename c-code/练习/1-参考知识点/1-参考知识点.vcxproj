@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="VA_可变参数.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3897259B-05CB-41A9-A064-365D42CB51CA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -146,14 +149,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="time_function_not_yet.c" />
-    <ClCompile Include="VA_可变参数.c" />
-    <ClCompile Include="windows_system函数.c" />
-    <ClCompile Include="__FILE__and__LINE__and__func__.c" />
-    <ClCompile Include="数据类型的极限大小.c" />
-    <ClCompile Include="浮点数无法精确存储的问题.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

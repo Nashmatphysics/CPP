@@ -12,11 +12,13 @@ VA_可变参数
 /***********************************可变参数应用场景1*************************************/
 //只能适用于形参类型相同的情况
 void fun(int count, ...)
+//可变参数可以工作的前提是: 定义的变量都是连续的线性存储.
+//但是显而易见的是,gcc并没有让这些变量连续的线性存储,vs是否为连续存储也是未知的, 所以并不应该直接使用...,
 {
 	int *temp = &count;
 	for (int i = 0; i < count ; i++)
 	{
-		temp++;
+		temp++;//无法判断fun形参初始化存储的类型,所以temp++的内容时未知的.
 		printf("%d\n", *temp);
 	}
 }
@@ -55,7 +57,7 @@ int main2(void)
 /***********************************可变参数应用场景3*************************************/
 /*
 各个va_xxx的作用:
-va_list arg_ptr：定义一个指向个数可变的参数列表指针；
+va_list arg_ptr：定义一个可以指向个数可变的参数列表指针；
 va_start(arg_ptr, argN)：使参数列表指针arg_ptr指向函数参数列表中的第一个可选参数，说明：argN是位于第一个可选参数之前的固定参数，（或者说，最后一个固定参数）
 va_arg(arg_ptr, type)：返回参数列表中指针arg_ptr所指的参数，返回类型为type，并使指针arg_ptr指向参数列表中下一个参数。
 va_copy(dest, src)：dest，src的类型都是va_list，va_copy()用于复制参数列表指针，将dest初始化为src。
@@ -80,7 +82,7 @@ void testfun2(char name[], ...)
 	va_end(ap);
 }
 
-int main3(void)
+int main(void)
 {
 	char name[128] = "nash";
 	int age = 24;
@@ -94,7 +96,7 @@ int main3(void)
 //边界条件的判断
 void simple_va_fun(int i, ...)
 { 
-va_list arg_ptr; 
+va_list arg_ptr; //va_list不一定是指针, 所以不要对其进行NULL初始化
 int j=0; 
 
 va_start(arg_ptr, i); 
@@ -109,11 +111,11 @@ va_end(arg_ptr);
 return; 
 } 
 
-int main(void)
+int main4(void)
 {
 	simple_va_fun(100, 0);
 	simple_va_fun(100, 200, 300,0);
 	system("pause");
 	return 0;
 }
-//总结: 必须要有结束标识变量.
+//总结: 使用可变参数必须要有结束标识变量, 就像c风格的字符串的结束标志符.
