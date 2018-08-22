@@ -146,7 +146,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="mysort.c" />
     <ClCompile Include="recursion.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="mysort.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
