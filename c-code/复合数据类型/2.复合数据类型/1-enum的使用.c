@@ -13,9 +13,10 @@ enum的使用
 enum weekday
 {
 	Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
-};//enum中的成员都是#define定义的字面值常量.不可以&
+};//enum中的成员都是#define定义的宏.不可以&
 
 void f(enum weekday i)//这里的形参使用int i,可以吗?--->OK, because enum is int.
+//void f(int i)
 {
 	switch (i)
 	{
@@ -32,6 +33,7 @@ void f(enum weekday i)//这里的形参使用int i,可以吗?--->OK, because enu
 
 int main1(void)
 {
+
 	enum weekday a;
 	printf("请输入星期:\n");
 	//scanf("%s", a );//error!--->why?--->enum is int!
@@ -51,7 +53,7 @@ enum本质就是一个int类型的变量 + #define的结合.
 */
 /***********************************如何使用scanf输入enum?*************************************/
 //要实现用户控制输入枚举体, 则只能通过类型转换.
-int main(void)
+int main2(void)
 {
 
 	int i;

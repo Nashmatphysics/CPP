@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1-enum的应用.c">
+    <ClCompile Include="1-enum的使用.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

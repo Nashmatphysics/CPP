@@ -19,8 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="1-为什么不输出helloworld.c" />
-    <ClCompile Include="2-file_function.c" />
     <ClCompile Include="3-scanf_and_printf.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

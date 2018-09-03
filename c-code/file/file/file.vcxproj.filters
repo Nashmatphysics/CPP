@@ -15,12 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2-file_function.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="1-为什么不输出helloworld.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="3-scanf_and_printf.c">
       <Filter>源文件</Filter>
     </ClCompile>
