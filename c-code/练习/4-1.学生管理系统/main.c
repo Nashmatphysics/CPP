@@ -17,6 +17,7 @@
 #include <stdarg.h>
 #include "student.h"
 
+
 int main(void)
 {
     student * st_array = NULL;

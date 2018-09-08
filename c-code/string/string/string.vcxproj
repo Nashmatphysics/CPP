@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="字符串的初始化.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{16DB109C-3DF1-4916-86AC-4CECCCC53E29}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -146,12 +149,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="string_function.c" />
-    <ClCompile Include="二维数组形式的字符串数组内存分布.c" />
-    <ClCompile Include="字符串溢出导致的3种结果.c" />
-    <ClCompile Include="字符串的初始化.c" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

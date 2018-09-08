@@ -15,16 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="二维数组形式的字符串数组内存分布.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="string_function.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="字符串的初始化.c">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="字符串溢出导致的3种结果.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

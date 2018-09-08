@@ -28,6 +28,7 @@ int main1(void)
 	fun(4, 1, 2, 3, 4);
 
 //getchar();
+
 system("pause");
 return 0;
 }
