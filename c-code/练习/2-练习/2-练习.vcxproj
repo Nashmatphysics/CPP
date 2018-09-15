@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="pow_计算次方.c" />
+    <ClCompile Include="2018-9-11.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{69494ED9-18B1-4CAE-9D65-D6513D6D312C}</ProjectGuid>
