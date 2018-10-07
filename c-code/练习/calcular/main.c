@@ -1,6 +1,6 @@
 /*
 2018/08/21
-²âÊÔ¿ò¼Ü
+æµ‹è¯•æ¡†æž¶
 */
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
@@ -13,7 +13,7 @@
 
 int main(void)
 {
-
+	printf("%d\n", sizeof(char *));
 //getchar();
 system("pause");
 return 0;

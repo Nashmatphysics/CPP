@@ -18,7 +18,7 @@ void fun(int count, ...)
 	int *temp = &count;
 	for (int i = 0; i < count ; i++)
 	{
-		temp++;//无法判断fun形参初始化存储的类型,所以temp++的内容时未知的.
+		temp++;//error, 无法判断fun形参初始化存储的方式(是连续存储呢,还是非连续呢),所以temp++的内容时未知的.
 		printf("%d\n", *temp);
 	}
 }
