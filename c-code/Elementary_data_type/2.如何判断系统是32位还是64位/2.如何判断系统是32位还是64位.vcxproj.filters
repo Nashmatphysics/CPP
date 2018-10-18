@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="字符串的初始化.c">
+    <ClCompile Include="通过指针判断编译器位数.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -18,13 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="字符串的初始化.c" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{16DB109C-3DF1-4916-86AC-4CECCCC53E29}</ProjectGuid>
+    <ProjectGuid>{C8C30872-202B-4396-8267-0BBEE59D2E30}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>string</RootNamespace>
+    <RootNamespace>My1基本类型的大小范围</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -149,6 +146,9 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="数据类型的极限大小.c" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
