@@ -18,14 +18,10 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="operator.c" />
-    <ClCompile Include="unsigned和signed整型运算.c" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{401320E5-5BA2-4D14-89AE-ADEFA618EDD2}</ProjectGuid>
+    <ProjectGuid>{40EE2F16-5642-48A5-A480-AF09D20B985E}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>operator</RootNamespace>
+    <RootNamespace>My5Control_flow</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -150,6 +146,10 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="break和continue.c" />
+    <ClCompile Include="switch.c" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

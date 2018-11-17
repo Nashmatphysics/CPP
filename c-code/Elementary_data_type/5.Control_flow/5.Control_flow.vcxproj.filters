@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="operator.c">
+    <ClCompile Include="switch.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="unsigned和signed整型运算.c">
+    <ClCompile Include="break和continue.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
