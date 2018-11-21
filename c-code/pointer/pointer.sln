@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "array", "array\array.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "poiner", "poiner\poiner.vcxproj", "{DB517C6C-D09C-46D2-81F8-A3DFBCB8C2C2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "2.动态内存分配", "2.动态内存分配\2.动态内存分配.vcxproj", "{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{DB517C6C-D09C-46D2-81F8-A3DFBCB8C2C2}.Release|x64.Build.0 = Release|x64
 		{DB517C6C-D09C-46D2-81F8-A3DFBCB8C2C2}.Release|x86.ActiveCfg = Release|Win32
 		{DB517C6C-D09C-46D2-81F8-A3DFBCB8C2C2}.Release|x86.Build.0 = Release|Win32
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Debug|x64.ActiveCfg = Debug|x64
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Debug|x64.Build.0 = Debug|x64
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Debug|x86.ActiveCfg = Debug|Win32
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Debug|x86.Build.0 = Debug|Win32
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Release|x64.ActiveCfg = Release|x64
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Release|x64.Build.0 = Release|x64
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Release|x86.ActiveCfg = Release|Win32
+		{2E74DD0D-DDBC-45C3-A52F-3A54C6890385}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

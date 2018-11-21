@@ -20,6 +20,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="动态内存分配的bug.c" />
+    <ClCompile Include="回调函数.c" />
+    <ClCompile Include="数组名_数组指针_指针数组_not_yet.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DB517C6C-D09C-46D2-81F8-A3DFBCB8C2C2}</ProjectGuid>

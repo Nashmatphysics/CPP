@@ -15,8 +15,8 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="数组元素倒置.c">
-      <Filter>源文件</Filter>
+    <ClCompile Include="1.动态内存分配.c">
+      <Filter>头文件</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

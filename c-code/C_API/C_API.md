@@ -1,3 +1,9 @@
+---
+ebook:
+  title: My eBook
+  authors: shd101wyy
+---
+
 # C 常用库函数
 [TOC]
 
