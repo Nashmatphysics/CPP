@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3-scanf_and_printf.c" />
+    <ClCompile Include="1-为什么不输出helloworld.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{DEC0AD06-53A4-4535-AE63-266DC9E1B69B}</ProjectGuid>

@@ -11,15 +11,9 @@
 #include <time.h>
 #include <stdarg.h>
 
-enum BOOL
-{
-	False, True
-};
-
 int main(void)
 {
-	short a = 32768u;
-	printf("%d\n", a);
+	char buff[100] = { 0 };
 	
 //getchar();
 system("pause");

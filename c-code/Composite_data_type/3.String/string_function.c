@@ -7,15 +7,18 @@
 int main1(void)
 {
     char array[1024] = {0};
-    strncpy(array, "nash", sizeof(array));
+    //strncpy(array, "nash", sizeof(array));//error, "nash"有sizeof(array)这么长吗!
+    strncpy(array, "nash", sizeof("nash"));
+
     printf("%s\n", array);
     strncpy(array, "\0", sizeof(array));
-    //strcpy(array, 0, sizeof(array));//error, 0, 即NULL, strcpy会对NULL指向的空间进行读取操作--error.
+    //strcpy(array, 0/*, sizeof(array)*/);//error, 0, 即NULL, strcpy会对NULL指向的空间进行读取操作--error.
     printf("%s\n", array);
 
     system("pause");
     return 0;
 }
+//注意: "nash" 代表的不是这个字符串, 而是它的地址
 
 /***********************************puts() & gets()*************************************/
 //有问题
@@ -78,13 +81,12 @@ int main4_1(void)
 2.将找到的子串替换成\0.
 3.内部指针保存下一次要strtok的字符串地址
 注意: 如果要从\0的后面开始继续分割, 则第一个参数必须为NULL, 表示从内置变量保存的地址开始继续分割.
-返回值: 返回当前子串的地址, 如果分到字符串的结尾, 则返回NULL(没有到字符串结尾的\0,是不会返回NULL的,即使没有要找的子串, 所以很智能);
+返回值: 返回当前子串的地址, 如果分到字符串的结尾, 则返回NULL(只要没有到字符串的结尾, 即使没有要找的子串,也返回当前子串的地址, 所以很智能);
 */
-int main4_2(void)
+int main(void)
 {
 	char str[] = "hello, world, itcast! good.; night?";
 	char *dlim = " ,?!.;";
-	//char dlim[] = ".?!.;";
 	char *p;
 
 	p = strtok(str, dlim);
@@ -92,9 +94,6 @@ int main4_2(void)
 	while ((p = strtok(NULL, dlim)) != NULL)
 		printf("%s\n", p);
 	
-	//p = strtok(str, " ");
-	//printf("str = %s\n", str);
-
 	system("pause");
 	return 0;
 }
@@ -105,4 +104,4 @@ itcast
 good
 night
 */
-//strtok并不是当指定字符串的所有字符都存在时才分割, 只要是自定子串中的字符就会分割.
+//strtok并不是当指定字符串的所有字符都存在时才分割, 只要是指定子串中的字符就会分割.
